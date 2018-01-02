@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}Real Eclipse</title>
 
@@ -25,7 +25,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script src="{{ site.baseurl }}/assets/jquery/jquery-1.11.2.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/jquery/jquery-3.2.1.slim.min.js"></script>
   <script src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="{{ site.baseurl }}/assets/jquery/jquery.timeago.js"></script>
   <script src="{{ site.baseurl }}/assets/re/global.js"></script>
@@ -37,11 +37,9 @@
     {{ content }}
 
     <footer class="footer">
-      <div class="container">
-        <p>
-          &copy; 2013-{{ site.time | date: "%Y" }} the <a href="{{ site.baseurl }}/team">Real Eclipse Task Force</a>. Last generated <span class="timeago" title="{{ site.time | date_to_xmlschema }}">on {{ site.time | date: "%A, %B %d, %Y" }} at {{ site.time | date: site.format_time }}</span>, this site uses <a href="http://validator.w3.org/check?uri=referer">HTML 5</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS 3</a>.
-        </p>
-      </div>
+      <p>
+        &copy; 2013-{{ site.time | date: "%Y" }} the <a href="{{ site.baseurl }}/team">Real Eclipse Task Force</a>. Last generated <span class="timeago" title="{{ site.time | date_to_xmlschema }}">on {{ site.time | date: "%A, %B %d, %Y" }} at {{ site.time | date: site.format_time }}</span>, this site uses <a href="https://validator.w3.org/check?uri=referer">HTML 5</a> and <a href="https://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS 3</a>.
+      </p>
     </footer>
   </div> <!-- /container -->
 </body>

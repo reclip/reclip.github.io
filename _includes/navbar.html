@@ -1,47 +1,48 @@
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/re/logo.png" alt="logo"></a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ site.baseurl }}">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Download? <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="http://reclip.codeplex.com/releases">from Codeplex</a></li>
-            <li><a href="http://sourceforge.net/projects/reclip/files">from SourceForge</a></li>
-          </ul>
+    <a class="navbar-brand" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/assets/re/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ site.baseurl }}">Home</a>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More Links <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://reclip.codeplex.com/">Codeplex</a></li>
-            <li><a href="https://github.com/reclip">GitHub</a></li>
-            <li><a href="https://sourceforge.net/projects/reclip/">SourceForge</a></li>
-            <li><a href="http://www.moddb.com/games/reclip">ModDB</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Community</li>
-            <li class="disabled"><a href="#">Forum <span class="label label-danger">Planning</span></a></li>
-            <li><a href="irc://chat.freenode.net/reclip">IRC</a></li>
-            <li><a href="https://webchat.freenode.net/?channels=reclip">Web IRC (freenode)</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Search Queries</li>
-            <li><a href="https://twitter.com/search?q=%22real%20eclipse%22">Twitter</a></li>
-            <li><a href="https://www.youtube.com/results?search_query=%22Real+Eclipse%22">YouTube</a></li>
-            <li><a href="https://encrypted.google.com/search?q=%22Real+Eclipse%22">Google</a></li>
-            <li><a href="http://www.bing.com/search?q=%22Real+Eclipse%22">Bing</a></li>
-            <li><a href="http://search.yahoo.com/search?q=%22Real+Eclipse%22">Yahoo</a></li>
-          </ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Download?
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="https://reclip.codeplex.com/releases">from Codeplex</a>
+            <a class="dropdown-item" href="https://sourceforge.net/projects/reclip/files">from SourceForge</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More Links
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="https://reclip.codeplex.com/">Codeplex</a>
+            <a class="dropdown-item" href="https://github.com/reclip">GitHub</a>
+            <a class="dropdown-item" href="https://sourceforge.net/projects/reclip/">SourceForge</a>
+            <a class="dropdown-item" href="http://www.moddb.com/games/reclip">ModDB</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Community</h6>
+            <a class="dropdown-item disabled" href="#">Forum <span class="badge badge-danger">Planning</span></a>
+            <a class="dropdown-item" href="irc://chat.freenode.net/reclip">IRC</a>
+            <a class="dropdown-item" href="https://webchat.freenode.net/?channels=reclip">Web IRC (freenode)</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Search Queries</h6>
+            <a class="dropdown-item" href="https://twitter.com/search?q=%22real%20eclipse%22">Twitter</a>
+            <a class="dropdown-item" href="https://www.youtube.com/results?search_query=%22Real+Eclipse%22">YouTube</a>
+            <a class="dropdown-item" href="https://encrypted.google.com/search?q=%22Real+Eclipse%22">Google</a>
+            <a class="dropdown-item" href="https://www.bing.com/search?q=%22Real+Eclipse%22">Bing</a>
+            <a class="dropdown-item" href="https://search.yahoo.com/search?q=%22Real+Eclipse%22">Yahoo</a>
+          </div>
         </li>
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
   </div>
 </nav>

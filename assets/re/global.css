@@ -7,8 +7,5 @@ a.navbar-brand {
 	padding-bottom: 0;
 }
 a.navbar-brand > img {
-	max-height: 100%;
-	height: 100%;
-	width: auto;
-	margin: 0 auto;
+	height: 38px;
 }
